@@ -1,0 +1,46 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewGDP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GDP Loading..." />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartGDP"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewAgri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agricultural Land Loading..." />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartAgri"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewCO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO₂ Loading..." />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartCO2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+    </LinearLayout>
+</ScrollView>
